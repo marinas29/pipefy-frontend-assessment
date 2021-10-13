@@ -1,11 +1,11 @@
 # The Assessment
 This assessment was build to validate your developer skills using our main stack (React + GraphQL). Keep in mind that UI and performance walk together to deliver the best experience.
 
-Your main objective is to deliver a list of Pipes (sorted by name and paginated), with the number of cards that belong to it, loading more elements at an user's interaction (like a button click or scroll). Once the pipes are totally listed, we want to see a small user interaction to load all Pipe's cards in a button click, loading this information inside a modal;
+Your main objective is to deliver a list of Pipes (sorted by name), with the number of cards that belong to it. Once the pipes are totally listed, we want to see a small interaction to load some Pipe's cards (paginated following the GraphQL pattern) in a button click, loading more cards at an user's interaction (like a button click). You can load these cards inside a modal, for example.
 
 You don't need to develop the best layout in this phase. Feel free to create your visual representation of Pipefy or replicate the visual structure that we already have.
 
-### Visual Representation
+## Visual Representation
 ![image](https://user-images.githubusercontent.com/5097397/127360349-7231b194-0a8c-4c31-af6c-886005bc8d6c.png)
 
 **OBS: You don't need to develop the favorite and "add new pipe" interactions. Don't worry about the Pipe's icons.**
