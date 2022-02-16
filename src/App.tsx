@@ -1,7 +1,7 @@
 import { useQuery } from '@apollo/client';
 import React from 'react';
 import './App.scss';
-import Card from './components/Card/Card';
+import Pipe from './components/Pipe/Pipe';
 import ORGANIZATION from './graphql/organization';
 import { IPipe } from './interfaces/pipe.interface';
 import { ORGANIZATION_ID } from './utils/constants';
@@ -21,13 +21,13 @@ function App() {
     <div className="app">
       <header className="app__header">
         <h2 className="app__header__title">Your pipes</h2>
-        <h3 className="app__header__subtitle">
+        <p className="app__header__subtitle">
           Here are all your processes <a href="#fake-link">learn more</a>.
-        </h3>
+        </p>
       </header>
       <div className="app__organization-pipes">
         {pipes?.map((pipe: IPipe) => (
-          <Card {...pipe} key={pipe?.name} />
+          <Pipe {...pipe} key={pipe?.name} />
         ))}
       </div>
     </div>
