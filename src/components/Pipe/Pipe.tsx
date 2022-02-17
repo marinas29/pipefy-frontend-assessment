@@ -9,7 +9,7 @@ const Pipe = (pipe: IPipe) => {
   return (
     <div
       className={`pipe pipe--${pipe?.color}`}
-      onClick={() => setIsModalOpen(!isModalOpen)}
+      onClick={() => setIsModalOpen(true)}
     >
       <p className="pipe__name">{pipe?.name}</p>
       <p className="pipe__count">{pipe?.cards_count} cards</p>

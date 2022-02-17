@@ -1,8 +1,8 @@
 import { gql } from '@apollo/client';
 
 const CARDS = gql`
-  query cards($pipe_id: ID!) {
-    cards(pipe_id: $pipe_id) {
+  query cards($pipe_id: ID!, $first: Int, $after: String) {
+    cards(pipe_id: $pipe_id, first: $first, after: $after) {
       edges {
         cursor
         node {

@@ -1,9 +1,9 @@
+import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
-import './styles/index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './styles/index.scss';
 
 const client = new ApolloClient({
   uri: process.env.REACT_APP_PIPEFY_API_URL || '',
