@@ -1,0 +1,75 @@
+@import '../../styles/vars.scss';
+
+.card {
+  align-items: flex-start;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 70px;
+  padding: 20px;
+  position: relative;
+  text-align: left;
+
+  &--blue {
+    background-color: lighten($blue, 20%);
+  }
+
+  &--cyan {
+    background-color: lighten($cyan, 20%);
+  }
+
+  &--gray {
+    background-color: lighten($gray, 20%);
+  }
+
+  &--green {
+    background-color: lighten($green, 20%);
+  }
+
+  &--indigo {
+    background-color: lighten($indigo, 40%);
+  }
+
+  &--lime {
+    background-color: lighten($lime, 20%);
+  }
+
+  &--orange {
+    background-color: lighten($orange, 20%);
+  }
+
+  &--pink {
+    background-color: lighten($pink, 20%);
+  }
+
+  &--purple {
+    background-color: lighten($purple, 20%);
+  }
+
+  &--red {
+    background-color: lighten($red, 20%);
+  }
+
+  &--sky {
+    background-color: $sky;
+  }
+
+  &--yellow {
+    background-color: lighten($yellow, 20%);
+  }
+
+  &__current-phase {
+    font-size: 10px;
+    font-weight: lighter;
+    margin: 10px;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+    top: 0;
+  }
+
+  &__name {
+    margin: 10px 0;
+  }
+}

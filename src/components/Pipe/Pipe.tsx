@@ -4,7 +4,7 @@ import Modal from '../Modal/Modal';
 import './Pipe.scss';
 
 const Pipe = (pipe: IPipe) => {
-  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <div
@@ -13,13 +13,11 @@ const Pipe = (pipe: IPipe) => {
     >
       <p className="pipe__name">{pipe?.name}</p>
       <p className="pipe__count">{pipe?.cards_count} cards</p>
-      {isModalOpen && (
-        <Modal
-          isModalOpen={isModalOpen}
-          pipe={pipe}
-          setIsModalOpen={setIsModalOpen}
-        />
-      )}
+      <Modal
+        isModalOpen={isModalOpen}
+        pipe={pipe}
+        setIsModalOpen={setIsModalOpen}
+      />
     </div>
   );
 };
