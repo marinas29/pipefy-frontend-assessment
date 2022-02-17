@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import CARDS from '../../graphql/cards';
 import { ICard, ICardsResult } from '../../interfaces/card.interface';
 import { IPipe } from '../../interfaces/pipe.interface';
+import { PAGE_SIZE } from '../../utils/constants';
 import Card from '../Card/Card';
 import '../Card/Card.scss';
 import './Modal.scss';
@@ -20,7 +21,7 @@ const Modal = ({ isModalOpen, pipe, setIsModalOpen }: IProps) => {
   const { data, fetchMore } = useQuery(CARDS, {
     variables: {
       pipe_id: pipe.id,
-      first: 5,
+      first: PAGE_SIZE,
     },
     onCompleted: (res) => {
       setCards(res?.cards?.edges);
