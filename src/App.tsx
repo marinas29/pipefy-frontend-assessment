@@ -15,7 +15,9 @@ function App() {
 
   const pipes = data?.organization?.pipes
     .map((pipe: IPipe) => pipe)
-    .sort((a: IPipe, b: IPipe) => a.name.trim().localeCompare(b.name.trim(), 'en'));
+    .sort((a: IPipe, b: IPipe) =>
+      a.name.trim().localeCompare(b.name.trim(), 'en')
+    );
 
   return (
     <div className="app">

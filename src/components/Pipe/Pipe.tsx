@@ -13,7 +13,13 @@ const Pipe = (pipe: IPipe) => {
     >
       <p className="pipe__name">{pipe?.name}</p>
       <p className="pipe__count">{pipe?.cards_count} cards</p>
-      {isModalOpen && <Modal isModalOpen={isModalOpen} pipe={pipe} setIsModalOpen={setIsModalOpen} />}
+      {isModalOpen && (
+        <Modal
+          isModalOpen={isModalOpen}
+          pipe={pipe}
+          setIsModalOpen={setIsModalOpen}
+        />
+      )}
     </div>
   );
 };
